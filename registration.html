@@ -593,12 +593,12 @@
           }
           const initialTheme =
             savedTheme ||
-            (prefersDark && prefersDark.matches ? "light" : "dark");
+            (prefersDark && prefersDark.matches ? "dark" : "dark");
           applyTheme(initialTheme);
 
           toggle.addEventListener("click", () => {
             const nextTheme = body.classList.contains("light-scheme")
-              ? "light"
+              ? "dark"
               : "dark";
             applyTheme(nextTheme);
             try {
@@ -617,7 +617,7 @@
               } catch (error) {
                 storedTheme = null;
               }
-              if (!storedTheme) applyTheme(event.matches ? "light" : "dark");
+              if (!storedTheme) applyTheme(event.matches ? "dark" : "dark");
             });
           }
         }
