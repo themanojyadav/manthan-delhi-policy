@@ -564,7 +564,7 @@
 
         function applyTheme(theme) {
           if (!toggle) return;
-          const isLight = theme === "light";
+          const isLight = theme === "dark";
           body.classList.remove("dark-scheme", "light-scheme");
           body.classList.add(isLight ? "light-scheme" : "dark-scheme");
           toggle.setAttribute("aria-pressed", String(isLight));
