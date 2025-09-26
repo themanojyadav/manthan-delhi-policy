@@ -267,12 +267,12 @@ body.light-scheme .top-utility .icon-link:focus-visible {
 
 .skip-link {
   position: absolute;
-  top: -100px;
-  left: 1rem;
+  top: 7px;
+  left: 5.5rem;
   z-index: 999;
-  background: #ffffff;
+  /* background: #ffffff; */
   color: #000;
-  padding: 0.75rem 1.5rem;
+  padding: 5px 12px;
   border-radius: 6px;
   border: 2px solid var(--primary-color);
   transition: top .2s ease;
