@@ -565,8 +565,8 @@
         function applyTheme(theme) {
           if (!toggle) return;
           const isLight = theme === "dark";
-          body.classList.remove("dark-scheme", "light-scheme");
-          body.classList.add(isLight ? "light-scheme" : "dark-scheme");
+          body.classList.remove("dark-scheme", "dark-scheme");
+          body.classList.add(isLight ? "dark-scheme" : "dark-scheme");
           toggle.setAttribute("aria-pressed", String(isLight));
           toggle.setAttribute(
             "aria-label",
@@ -597,7 +597,7 @@
           applyTheme(initialTheme);
 
           toggle.addEventListener("click", () => {
-            const nextTheme = body.classList.contains("light-scheme")
+            const nextTheme = body.classList.contains("dark-scheme")
               ? "dark"
               : "dark";
             applyTheme(nextTheme);
